@@ -11,6 +11,7 @@ const db = mysql.createConnection({
     port: 3309              // <--- INI BAGIAN PENTINGNYA!
 });
 
+
 // 3. Lakukan koneksi ke database
 db.connect(err => {
     if (err) {
@@ -25,7 +26,7 @@ const app = express();
 const port = 3000;
 
 // 5. Buat endpoint (rute) dengan metode GET untuk mengambil data
-// Endpoint ini akan merespon jika ada request ke /biodata
+
 app.get('/biodata', (req, res) => {
     // Buat query SQL untuk mengambil semua data dari tabel biodata
     const sqlQuery = "SELECT * FROM biodata";
