@@ -2,7 +2,6 @@
 const express = require('express');
 const mysql = require('mysql');
 
-// Kode BARU yang sudah diperbaiki
 const db = mysql.createConnection({
     host: 'localhost',      // Sesuai screenshot
     user: 'root',           // Sesuai screenshot
